@@ -14,10 +14,10 @@ const Navbar = () => {
         <p>SHOPPER</p>
       </div>
       <ul className="nav-menu">
-        <li onMouseOver={() => {setmenu("shop")}}><Link to='/'>Shop</Link>{menu==="shop"?<hr />:<></>}</li>
-        <li onMouseOver={() => {setmenu("mens")}}><Link to='/mens'>Men</Link>{menu==="mens"?<hr />:<></>}</li>
-        <li onMouseOver={() => {setmenu("womens")}}><Link to='/womens'>Women</Link>{menu==="womens"?<hr />:<></>}</li>
-        <li onMouseOver={() => {setmenu("kids")}}><Link to='/kids'>Kids</Link>{menu==="kids"?<hr />:<></>}</li>
+        <li onClick={() => {setmenu("shop")}}><Link to='/'>Shop</Link>{menu==="shop"?<hr />:<></>}</li>
+        <li onClick={() => {setmenu("mens")}}><Link to='/mens'>Men</Link>{menu==="mens"?<hr />:<></>}</li>
+        <li onClick={() => {setmenu("womens")}}><Link to='/womens'>Women</Link>{menu==="womens"?<hr />:<></>}</li>
+        <li onClick={() => {setmenu("kids")}}><Link to='/kids'>Kids</Link>{menu==="kids"?<hr />:<></>}</li>
       </ul>
       <div className="nav-login-cart">
         <Link to='/login'><button>Login</button></Link>
