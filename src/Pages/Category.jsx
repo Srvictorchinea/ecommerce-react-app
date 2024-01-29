@@ -34,6 +34,9 @@ const Category = (props) => {
           }
         })}
       </div>
+      <div className="category-loadmore">
+        <button> Explore more</button>
+      </div>
     </div>
   );
 };
